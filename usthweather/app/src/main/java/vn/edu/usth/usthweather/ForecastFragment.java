@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,9 +60,21 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(0x20FFFF00);
-        return view;
+//        // Inflate the layout for this fragment
+//        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
+//        view.setBackgroundColor(0x201CD760);
+//        return view;
+
+        LinearLayout layout = new LinearLayout(getContext());
+
+        layout.setOrientation(LinearLayout.VERTICAL);
+
+        TextView tv = new TextView(getContext());
+
+        tv.setText("Hello");
+
+        layout.addView(tv);
+
+        return layout;
     }
 }
