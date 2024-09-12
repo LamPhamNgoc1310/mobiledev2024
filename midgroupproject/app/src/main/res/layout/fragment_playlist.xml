@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    tools:context=".PlaylistFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <Button
+            style="@style/buttons_style"
+            android:text="@string/playlist_button">
+        </Button>
+
+        <Button
+            style="@style/buttons_style"
+            android:text="@string/albums_button">
+        </Button>
+
+        <Button
+            style="@style/buttons_style"
+            android:text="@string/downloaded_button">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

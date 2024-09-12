@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">groupproject</string>
+
+<!--    Buttons-->
+    <string name="yourlib_title">Your Library</string>
+    <string name="playlist_button">Playlist</string>
+    <string name="albums_button">Albums</string>
+    <string name="downloaded_button">Downloaded</string>
+
+<!--    Your playlist-->
+    <string name="liked_playlist">Liked songs</string>
+    <string name="type_playlist">Playlist</string>
+    <string name="playlist_song_number"> • 432 songs</string>
+
+<!--    Home Navigation-->
+    <string name="home_navigation">Home</string>
+    <string name="search_navigation">Search</string>
+    <string name="library_navigation">Library</string>
+
+</resources>
