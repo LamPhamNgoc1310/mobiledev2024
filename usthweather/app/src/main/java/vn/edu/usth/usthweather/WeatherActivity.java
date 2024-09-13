@@ -8,24 +8,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i("USTHWeather", "onCreate called");
-//        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        PagerAdapter adapter = new HomeFragmentPagerAdapter(
+                getSupportFragmentManager()) ;
+        ViewPager pager = (ViewPager) findViewById (R.id.weatherpager);
+        pager. setOffscreenPageLimit (3);
+        pager. setAdapter (adapter);
 
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            ForecastFragment firstFragment = new ForecastFragment();
-//            getSupportFragmentManager().beginTransaction().add(
-//                    R.id.main, firstFragment).commit();
-//            return insets;
-//        });
-
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
+        tabLayout.setupWithViewPager(pager);
 }
     @Override
     public void onStart(){

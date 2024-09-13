@@ -7,18 +7,33 @@
     android:layout_height="match_parent"
     tools:context=".WeatherActivity"
     android:orientation="vertical">
-
-
-        <fragment
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:name="vn.edu.usth.usthweather.WeatherFragment"
-            tools:layout="@layout/fragment_weather">
-        </fragment>
-        <fragment
+            android:layout_height="wrap_content"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/weatherpager"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:name="vn.edu.usth.usthweather.ForecastFragment"
-            tools:layout="@layout/fragment_forecast">
-        </fragment>
+            android:layout_height="wrap_content">
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:name="vn.edu.usth.usthweather.WeatherAndForecastFragment"
+                    tools:layout="@layout/fragment_weather_and_forecast">
+                </fragment>
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:name="vn.edu.usth.usthweather.WeatherAndForecastFragment"
+                    tools:layout="@layout/fragment_weather_and_forecast">
+                </fragment>
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:name="vn.edu.usth.usthweather.WeatherAndForecastFragment"
+                    tools:layout="@layout/fragment_weather_and_forecast">
+                </fragment>
+        </androidx.viewpager.widget.ViewPager>
 </LinearLayout>

@@ -8,27 +8,24 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="245dp"
-        android:background="#DBFBDC"
-        >
+        android:background="#DBFBDC">
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text="12ºC\nWindy"></TextView>
+            android:text="12ºC\nWindy"/>
 
         <ImageView
             android:layout_width="175dp"
             android:layout_height="175dp"
             android:src="@drawable/wind"
-            android:layout_centerInParent="true">
-
-        </ImageView>
+            android:layout_centerInParent="true"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="Paris"></TextView>
+            android:layout_alignParentEnd="true"
+            android:text="Paris"/>
     </RelativeLayout>
 
 </FrameLayout>
