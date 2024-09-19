@@ -8,12 +8,21 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="245dp"
-        android:background="#DBFBDC">
+        android:background="@drawable/frame">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="12ºC\nWindy"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weather_cool_temperature" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weather_windy_status"/>
+        </LinearLayout>
 
         <ImageView
             android:layout_width="175dp"
@@ -25,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:text="Paris"/>
+            android:text="@string/city_Paris"/>
     </RelativeLayout>
 
 </FrameLayout>

@@ -1,3 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">USTHWeather</string>
+    <string name="weather_windy_status">Gió</string>
+    <string name="forecast_monday">Thứ Hai</string>
+    <string name="forecast_tuesday">Thứ Ba</string>
+    <string name="forecast_wednesday">Thứ Tư</string>
+    <string name="forecast_thursday">Thứ Năm</string>
+    <string name="forecast_friday">Thứ Sáu</string>
+    <string name="forecast_saturday">Thứ Bảy</string>
+    <string name="forecast_sunday">Chủ Nhật</string>
+    <string name="forecast_hot_status">Nóng</string>
 </resources>

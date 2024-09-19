@@ -19,18 +19,26 @@
             android:layout_width="92dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Wednesday"/>
+            android:text="@string/forecast_monday"/>
         <ImageView
-            android:layout_width="200px"
+            android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/high" />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:text="Hot\n31ºC - 37ºC" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/forecast_hot_status" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forecast_hot_temperature" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -44,18 +52,26 @@
             android:layout_width="92dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Wednesday"/>
+            android:text="@string/forecast_tuesday"/>
         <ImageView
-            android:layout_width="200px"
+            android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/high" />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:text="Hot\n31ºC - 37ºC" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/forecast_hot_status" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forecast_hot_temperature" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="370dp"
@@ -68,18 +84,26 @@
             android:layout_width="92dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Wednesday"/>
+            android:text="@string/forecast_wednesday"/>
         <ImageView
-            android:layout_width="200px"
+            android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/high" />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:text="Hot\n31ºC - 37ºC" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/forecast_hot_status" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forecast_hot_temperature" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="370dp"
@@ -92,18 +116,26 @@
             android:layout_width="92dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Wednesday"/>
+            android:text="@string/forecast_thursday"/>
         <ImageView
-            android:layout_width="200px"
+            android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/high" />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:text="Hot\n31ºC - 37ºC" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/forecast_hot_status" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forecast_hot_temperature" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="370dp"
@@ -116,18 +148,26 @@
             android:layout_width="92dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Wednesday"/>
+            android:text="@string/forecast_friday"/>
         <ImageView
-            android:layout_width="200px"
+            android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/high" />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:text="Hot\n31ºC - 37ºC" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/forecast_hot_status" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forecast_hot_temperature" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="370dp"
@@ -140,18 +180,26 @@
             android:layout_width="92dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Wednesday"/>
+            android:text="@string/forecast_saturday"/>
         <ImageView
-            android:layout_width="200px"
+            android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/high" />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:text="Hot\n31ºC - 37ºC" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/forecast_hot_status" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forecast_hot_temperature" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="370dp"
@@ -164,20 +212,29 @@
             android:layout_width="92dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Wednesday"/>
+            android:text="@string/forecast_sunday"/>
         <ImageView
-            android:layout_width="200px"
+            android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/high" />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:text="Hot\n31ºC - 37ºC" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/forecast_hot_status" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forecast_hot_temperature" />
+        </LinearLayout>
     </LinearLayout>
-    
+
+
 
 
 </LinearLayout>
