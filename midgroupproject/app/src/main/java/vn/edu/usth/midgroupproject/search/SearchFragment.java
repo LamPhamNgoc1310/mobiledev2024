@@ -1,4 +1,4 @@
-package vn.edu.usth.midgroupproject;
+package vn.edu.usth.midgroupproject.search;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import vn.edu.usth.midgroupproject.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link LibraryPageFragment#newInstance} factory method to
+ * Use the {@link SearchFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class LibraryPageFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class LibraryPageFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public LibraryPageFragment() {
+    public SearchFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class LibraryPageFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment LibraryPageFragment.
+     * @return A new instance of fragment SearchFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static LibraryPageFragment newInstance(String param1, String param2) {
-        LibraryPageFragment fragment = new LibraryPageFragment();
+    public static SearchFragment newInstance(String param1, String param2) {
+        SearchFragment fragment = new SearchFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class LibraryPageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_library_page, container, false);
+        return inflater.inflate(R.layout.fragment_search, container, false);
     }
 }
