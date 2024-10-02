@@ -2,8 +2,12 @@ package vn.edu.usth.usthweather;
 
 import android.util.Log;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -27,7 +31,26 @@ public class WeatherActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
-}
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.action_bar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.refresh) {
+            Toast.makeText(this,"Refreshed!", Toast.LENGTH_SHORT).show();
+        } else if (item.getItemId() == R.id.setting) {
+            Toast.makeText(this,"Setting clicked", Toast.LENGTH_SHORT).show();
+        } else {
+            return false;
+        }
+        return true;
+    }
+
     @Override
     public void onStart(){
         super.onStart();
